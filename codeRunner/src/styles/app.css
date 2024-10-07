@@ -1,0 +1,121 @@
+button {
+    color: white;
+    background-color: #636ae8;
+    width: 4rem;
+    height: 2rem;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 10px;
+
+    &.selected {
+        transform: scale(1.09);
+        border-color: white;
+        border-width: 1px;
+        /* background-color: red; */
+    }
+}
+
+.language-chooser {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3px;
+}
+.code-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.code-editor {
+    margin: 10px;
+    height:80vh;
+    width: 50vw;
+    flex: 1;
+    background-color: #303030;
+    color: wheat;
+    border-width: 0.5px;
+    border-radius: 3px;
+}
+
+.code-editor:focus {
+    outline: none;
+    border: 1px solid #ffffff;
+}
+
+.result {
+    outline: none;
+    min-width:30vw;
+    max-width: 30vw;
+    margin: 10px;
+    height: 30px;
+    /* max-height: 80vh; */
+    background-color: #303030;
+    color: wheat;
+    border-width: 0.5px;
+    border-radius: 3px;
+}
+
+.output-testcase-container{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.testcase{
+    outline: none;
+    min-width:30vw;
+    max-width: 30vw;
+    margin: 10px;
+    height: 30px;
+    /* max-height: 80vh; */
+    background-color: #303030;
+    color: wheat;
+    border-width: 0.5px;
+    border-radius: 3px;
+}
+
+@media screen and (max-width:600px) {
+    .code-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .code-editor {
+        margin: 10px;
+        height:80vh;
+        width: 80vw;
+        flex: 1;
+        background-color: #303030;
+        color: wheat;
+        border-width: 0.5px;
+        border-radius: 3px;
+    }
+    .testcase{
+        outline: none;
+        min-width:30vw;
+        max-width: 80vw;
+        margin: 10px;
+        height: 30px;
+        /* max-height: 80vh; */
+        background-color: #303030;
+        color: wheat;
+        border-width: 0.5px;
+        border-radius: 3px;
+    }
+
+    .result{
+        outline: none;
+        min-width:30vw;
+        max-width: 80vw;
+        margin: 10px;
+        height: 30px;
+        /* max-height: 80vh; */
+        background-color: #303030;
+        color: wheat;
+        border-width: 0.5px;
+        border-radius: 3px;
+    }
+    #root{
+        padding: 20px 0px;
+    }
+}
